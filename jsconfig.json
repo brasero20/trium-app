@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "jsx": "preserve",
+    "baseUrl": "src",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "configs/*": ["src/configs"],
+      "components/*": ["src/components"],
+      "constants/*": ["src/constants"],
+      "storage/*": ["src/storage"],
+      "hooks/*": ["src/hooks/"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,535 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  background-color: #fff;
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+}
+@media only screen and (max-width: 480px) {
+  body {
+    margin-top: 16px;
+  }
+}
+:root {
+  font-size: 62.5%;
+}
+.prism-icon-eye,
+.prism-icon-eye-blocked {
+  width: 16.5px;
+  height: 14px;
+  color: #005BA8;
+}
+.main-content {
+  width: 360px;
+  margin-top: 0;
+  margin-bottom: auto;
+  padding-bottom: 64px;
+}
+.main-content .logo-container {
+  height: 76px;
+}
+.main-content input[type='text'],
+.main-content input[type='password'] {
+  width: 296px;
+  height: 40px;
+  font-size: 16px;
+}
+.main-content label {
+  font-size: 14px;
+  margin-bottom: 1px;
+}
+.main-content .username-recovery-form,
+.main-content .username-recovery-confirmation,
+.main-content .reset-password-form,
+.main-content .reset-password-confirmation,
+.main-content .login-form,
+.main-content .account-selector,
+.main-content .new-password-form,
+.main-content .consent-form,
+.main-content .logout-page,
+.main-content .error-page,
+.main-content .account-info-form,
+.main-content .verification-form {
+  margin-top: 16px;
+}
+.main-content .username-recovery-form h1,
+.main-content .username-recovery-confirmation h1,
+.main-content .reset-password-form h1,
+.main-content .reset-password-confirmation h1,
+.main-content .login-form h1,
+.main-content .account-selector h1,
+.main-content .new-password-form h1,
+.main-content .consent-form h1,
+.main-content .logout-page h1,
+.main-content .error-page h1,
+.main-content .account-info-form h1,
+.main-content .verification-form h1 {
+  margin-bottom: 16px;
+  text-align: center;
+}
+.main-content .username-recovery-form .btn-block,
+.main-content .username-recovery-confirmation .btn-block,
+.main-content .reset-password-form .btn-block,
+.main-content .reset-password-confirmation .btn-block,
+.main-content .login-form .btn-block,
+.main-content .account-selector .btn-block,
+.main-content .new-password-form .btn-block,
+.main-content .consent-form .btn-block,
+.main-content .logout-page .btn-block,
+.main-content .error-page .btn-block,
+.main-content .account-info-form .btn-block,
+.main-content .verification-form .btn-block {
+  width: 296px;
+  height: 40px;
+  font-size: 16px;
+}
+.main-content .account-info-form .information {
+  width: 296px;
+  margin-top: 25px;
+  margin-bottom: 115px;
+}
+.main-content .account-info-form .information div {
+  margin-bottom: 32px;
+}
+.main-content .account-info-form .information div label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6a6a6a;
+  margin-bottom: 11px;
+}
+.main-content .account-info-form .information div span {
+  display: block;
+  font-size: 16px;
+}
+.main-content .account-info-form .information #additionalInfo {
+  font-size: 14px;
+}
+.main-content .account-info-form .information #additionalInfo strong {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.main-content .account-info-form .information #additionalInfo span {
+  display: inline;
+}
+.main-content .login-form form .form-group {
+  margin-left: 24px;
+}
+.main-content .login-form form input[type='checkbox'] {
+  margin-left: 0;
+}
+.main-content .login-form form .remember-me-label {
+  font-size: 16px !important;
+  color: #000000;
+}
+.main-content .username-recovery-form p,
+.main-content .username-recovery-confirmation p,
+.main-content .reset-password-form p,
+.main-content .reset-password-confirmation p,
+.main-content .consent-form p,
+.main-content .logout-page p {
+  width: 296px;
+  font-size: 14px;
+}
+.main-content .username-recovery-form form,
+.main-content .username-recovery-confirmation form,
+.main-content .reset-password-form form,
+.main-content .reset-password-confirmation form,
+.main-content .consent-form form,
+.main-content .logout-page form {
+  margin-top: 4px;
+}
+.main-content .username-recovery-form form .form-group:nth-of-type(1),
+.main-content .username-recovery-confirmation form .form-group:nth-of-type(1),
+.main-content .reset-password-form form .form-group:nth-of-type(1),
+.main-content .reset-password-confirmation form .form-group:nth-of-type(1),
+.main-content .consent-form form .form-group:nth-of-type(1),
+.main-content .logout-page form .form-group:nth-of-type(1) {
+  margin-left: 24px;
+}
+.main-content .username-recovery-form form .form-group:nth-of-type(2),
+.main-content .username-recovery-confirmation form .form-group:nth-of-type(2),
+.main-content .reset-password-form form .form-group:nth-of-type(2),
+.main-content .reset-password-confirmation form .form-group:nth-of-type(2),
+.main-content .consent-form form .form-group:nth-of-type(2),
+.main-content .logout-page form .form-group:nth-of-type(2) {
+  margin-top: 25px;
+}
+.unauthorized {
+  width: min-content;
+  align-self: center;
+}
+.unauthorized .alert-danger {
+  background-color: #FCCCC0;
+  color: #902B00;
+  display: flex;
+  width: 328px;
+}
+.unauthorized h1 {
+  padding-top: 15px;
+  margin-bottom: revert;
+}
+.unauthorized p {
+  width: 296px;
+  font-size: 14px;
+  padding-left: inherit;
+  display: inline-flex;
+  margin-bottom: 0;
+}
+.unauthorized .unauthorized-icon {
+  font-size: initial;
+}
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.consent-form .consent-scopecheck {
+  display: none;
+}
+.consent-form p {
+  margin-bottom: 15px;
+}
+.consent-form form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.new-password-form p {
+  width: 296px;
+  font-size: 14px;
+}
+.new-password-form form {
+  margin-top: 4px;
+}
+.new-password-form form .form-group {
+  margin-left: 24px;
+}
+.new-password-form form .form-group:nth-of-type(2) {
+  margin-top: 25px;
+  margin-left: 0;
+}
+form .account-selector-spacer {
+  min-height: 136px;
+  margin-top: 4px;
+  margin-left: 0;
+}
+form .account-selector-spacer .form-group {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+form .account-selector-spacer label {
+  font-size: 16px;
+}
+.prism-message {
+  width: 296px;
+}
+.prism-message .icon {
+  margin-top: 0 !important;
+}
+.prism-message .prism-message__text {
+  font-size: 14px;
+  margin-right: 1rem;
+}
+.prism-message-invalid-invitation {
+  width: 90% !important;
+  padding: 0.8rem !important;
+}
+.prism-message-canceled {
+  background-color: #fff0c3 !important;
+}
+.signin-btn {
+  color: #001b35;
+  margin: 1.6rem 0 1.6rem 0;
+}
+.radio-item {
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 8px;
+}
+.prism-radio label .itemCol {
+  font-size: 16px;
+}
+.account-selector-header {
+  margin-top: 16px;
+}
+.account-selector-header h1 {
+  margin-bottom: 0;
+}
+.account-selector-inactive-label {
+  padding-left: 10px;
+  color: #6A6A6A;
+  font-style: italic;
+  line-height: 15px;
+  font-size: 12px;
+}
+.grant-card {
+  width: 328px;
+}
+.grants-header {
+  width: 328px;
+}
+.grants-header h1 {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.created {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4A4A4A;
+}
+.expires {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4A4A4A;
+}
+.btn-outline-danger {
+  border-color: #902B00;
+  color: #902B00;
+}
+.btn-outline-danger .focus,
+.btn-outline-danger :focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(195, 58, 0, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(195, 58, 0, 0.5);
+}
+.btn-outline-danger .disabled,
+.btn-outline-danger :disabled {
+  background-color: transparent;
+  color: #902B00;
+}
+.btn-outline-danger :hover {
+  background-color: #902B00;
+  border-color: #902B00;
+  color: #fff;
+}
+.btn-outline-danger:not(:disabled):not(.disabled).active,
+.btn-outline-danger:not(:disabled):not(.disabled):active,
+.show > .btn-outline-danger.dropdown-toggle {
+  background-color: #902B00;
+  border-color: #902B00;
+  color: #fff;
+}
+.btn-outline-danger:not(:disabled):not(.disabled).active:focus,
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-danger.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(195, 58, 0, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(195, 58, 0, 0.5);
+}
+.icon-size-16x16 {
+  width: 16px;
+  height: 16px;
+}
+.resend-code-message {
+  display: flex;
+  flex-direction: row;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: #902B00;
+  font-weight: 400;
+}
+.send-success {
+  background-color: #e3fad1;
+  color: #000000;
+  background-color: #E3FAD1;
+}
+.send-fail {
+  background-color: #fcccc0;
+}
+.resend-code-message .icon {
+  margin-right: 5px;
+  padding-top: 2px;
+}
+.here-to-help-page {
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 310px;
+}
+.here-to-help-page h1 {
+  padding: unset;
+  margin: unset;
+}
+.here-to-help-page .we-here-to-help-title {
+  margin: unset;
+}
+.here-to-help-page .we-here-to-help-context {
+  padding: unset;
+  margin: unset;
+  padding-top: 16px;
+}
+.here-to-help-page .button-recover-user {
+  padding: unset;
+  margin: unset;
+  margin-top: 16px;
+}
+.here-to-help-page .still-need-help-text {
+  padding: unset;
+  margin: unset;
+  margin-top: 32px;
+}
+.here-to-help-page .please-call-text {
+  padding: unset;
+  margin: unset;
+  margin-top: 5px;
+}
+.login-page .still-need-help-text {
+  padding: unset;
+  margin: unset;
+  margin-top: 32px;
+  text-align: center;
+}
+.login-page .please-call-text {
+  padding: unset;
+  margin: unset;
+  margin-top: 5px;
+  text-align: center;
+}
+.confirmation-email-address {
+  padding-top: 16px;
+  padding-left: 20.2px;
+  padding-right: 20.2px;
+}
+.input-code-confirm-email-address {
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+.form-confirmation-email {
+  margin: 0 0;
+  font-size: 18px;
+  color: #6A6A6A;
+  font-weight: 400;
+}
+.submit-confirmation-email {
+  width: 100%;
+  margin-bottom: 8px;
+}
+.form-confirmation-email-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+.notification-email-address {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #003468;
+  padding: 8px 16px;
+  background-color: #C1DFF2;
+  margin-bottom: 82px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+.icon-notification-confirm-email {
+  color: #003468;
+  padding-top: 2px;
+}
+.email-confirmation-email-address {
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.confirmation-email-button-submit {
+  margin-bottom: 20px;
+}
+.resend {
+  color: #005BA8;
+}
+a:hover {
+  cursor: pointer;
+}
+.do-you-have-your-own-cd-login {
+  padding: unset;
+  margin: unset;
+  padding-left: 15.091px;
+  padding-right: 15.091px;
+}
+.do-you-have-your-own-cd-login h1 {
+  padding: unset;
+  margin: unset;
+}
+.do-you-have-your-own-cd-login p {
+  padding: unset;
+  margin: unset;
+}
+.do-you-have-your-own-cd-login .title {
+  padding: unset;
+  margin: unset;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.do-you-have-your-own-cd-login .owner-title {
+  font-size: 2.4rem !important;
+}
+.do-you-have-your-own-cd-login .button-group {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.do-you-have-your-own-cd-login .button-group .button-padding {
+  margin-top: 16px;
+}
+.do-you-have-your-own-cd-login .button-group .button-not-sure {
+  color: #005BA8;
+}
+.text-info-notification-email {
+  color: #003468;
+}
+.verification-form-message div {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.verification-form #cancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.verification-form .back-button {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.verification-form form div {
+  width: 296px;
+}
+.verification-form form label {
+  font-size: 16px;
+  overflow-wrap: anywhere;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
